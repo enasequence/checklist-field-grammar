@@ -2,13 +2,15 @@ Synopsis
 
 Antlr package based on the checklist field grammar.
 
+http://www.antlr.org
+
 ## Building 
 
-./gradlew jar
+gradlew jar
 
 ## Publishing to the local maven repository
 
-./gradlew -Penv=localtest install
+gradlew install
 
 ## Contributors
 
