@@ -11,12 +11,13 @@ grammar ChecklistCondition;
 	package uk.ac.ebi.ena.sra.validation.checklist.condition;
 	import java.util.HashMap;
 	import java.util.ArrayList;
-	import org.apache.log4j.Logger;
+	import org.slf4j.Logger;
+    import org.slf4j.LoggerFactory;
 }
 
 @parser::members
 {
-    static Logger logger = Logger.getLogger(ChecklistConditionParser.class);
+    static Logger logger = LoggerFactory.getLogger(ChecklistConditionParser.class);
 	private HashMap<String, ArrayList<String>> fieldsAndValues = new HashMap<String, ArrayList<String>>();
 	private static final String FILTER_REGEX = "[,;\\s_:.#\\\\\\/]";
 	

@@ -67,7 +67,8 @@ clean.dependsOn cleanAntlr
 
 dependencies {
     compile(group: 'org.antlr', name: 'antlr4', version: '4.5.1')
-    compile(group: 'log4j', name: 'log4j', version: '1.2.13')
+    compile group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.21'
+//    compile(group: 'org.apache.logging.log4j', name: 'log4j', version: '2.6.2')
 }
 
 sourceCompatibility = 1.8
