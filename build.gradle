@@ -60,7 +60,7 @@ compileJava {
     dependsOn generateGrammarSource
     source generateGrammarSource.destinationDir
 }
-task cleanAntlr << {
+task cleanAntlr () {
     delete generateGrammarSource.destinationDir
 }
 clean.dependsOn cleanAntlr
